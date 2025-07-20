@@ -1,0 +1,270 @@
+/* font  */
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+.poppins{
+  font-family: "Poppins", sans-serif;
+  font-weight:400;
+  font-style: normal;
+}
+
+
+/* shered styles */
+
+
+.page-color{
+    background-color:rgb(253, 251, 251);
+}
+.dark-1{
+    color: #3A3A3A;
+}
+.dark-2{
+    color: #787885;
+}
+.primary-button{
+font-weight: 700;
+color: white;
+background-color: #E02C6D;
+padding: 10px 24px;
+border: none;
+outline: none;
+border-radius: 41px;
+
+}
+
+/* header section styles */
+
+/* navbar styles */
+.navbar{
+    display: flex;
+    max-width:1500px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 54px;
+}
+.logo{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.nav-items{
+    display:flex ;
+    list-style: none;
+    gap: 34px;
+    padding-inline-start:0px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.1.5rem;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+/* hero section styles */
+.hero{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 100px;
+ 
+   
+}
+.camera{
+    background-image: url(../images/Circle\ design.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hero-title{
+    font-size: 3.3rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.hero-discription{
+    font-weight: 600;
+}
+.hero-content{
+    max-width: 582px;
+    max-height: 270px;
+    margin-bottom: 50px;
+   
+}
+.hero-pic{
+    max-width: 100%;
+}
+
+/* sponsor sectiion styles */
+.sponsors{
+    max-width: 1110px;
+    margin: 0 auto;
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(7,1fr);
+    margin-top: 70px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
+}
+
+/* products section */
+.cards{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap:30px;
+margin-bottom: 50px;
+
+}
+.card-title{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.products{
+    max-width: 1047px;
+    margin: 0 auto;
+    margin-top: 100px;
+    
+}
+.section-title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+.fa-star,.fa-star-half-stroke{
+    color:#FB8200;
+    font-size: 12px;
+}
+.product-card{
+    max-width:100%;
+    max-height: 576px;
+   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.08);
+    padding: 17px;
+}
+.product-price,.card-title,.product-rating,.product-discribtion{
+    margin:8px;
+}
+.product-btn{
+    outline: none;
+    border: none;
+    background-color: white;
+    font-weight: 700;
+    color: rgba(224, 44, 109, 0.87);
+      margin-left: 950px;
+}
+
+/* feature section styles */
+.feature{
+    max-width: 1110px;
+    margin: 0 auto;
+    justify-content:space-between;
+    align-items: center;
+    display: flex;
+    margin-top: 100px;
+}
+.feature-tite{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.feature-discription{
+    font-weight: 700;
+}
+.btn-2{
+font-weight: 700;
+color: white;
+background-color: #E02C6D;
+padding: 10px 24px;
+border: none;
+outline: none;
+}
+.img-f{
+    max-width: 100%;
+    margin-top: 10px;
+}
+/* footer section styles */
+.footer{
+    background-color: #0A0826;
+    color:white;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+.footer-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.footer-dis{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.footer-title,.footer-dis{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.social-icon{
+    display: flex;
+    gap: 16px;
+}
+.icon{
+    max-width: 32px;
+    max-height: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px){
+    .navbar ,.nav-items{
+        flex-direction: column;
+    }
+    .navbar-links{
+        padding-left: 5px;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        background-image: none;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+   .sponsors{
+    grid-template-columns:repeat(2,1fr);
+    margin-top: 120px;
+   }
+    .feature{
+        flex-direction:column-reverse;
+    }
+    .camera{
+        background-image: none;
+    }
+    .hero-content{
+        width: 100%;
+    }
+     .cards{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+     }
+     .product-btn{
+        margin-left:250px;
+     }
+}
